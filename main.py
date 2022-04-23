@@ -1,9 +1,12 @@
 import random
 
+print("Hello, welcome to Lulu's Magic 8 Ball.")
+
 #variables 
-name = ""
-question = "Does he love me?"
+#name = input("Name, please.")
+question = input("What do you dare to ask?")
 answer = ""
+
 
 random_number = random.randint(1,15) 
 
@@ -39,13 +42,11 @@ elif random_number == 15:
   answer = "No."         
 else: answer = "Error" 
 
-if name == "" and question != "":
-  print("Question: " + question) 
-  print("Magic 8-Ball's answer: " + answer)  
-if name != "" and question == "":
-  print("Dear " + name + ", the Magic 8-Ball cannot provide a fortune unless you ask it something.")    
-elif question == "":
-  print("Dear Mystery User, the Magic 8-Ball has not recieved a question.")    
-elif name == "" and question == "":
-  print(name + " asks: " + question)
-  print("Magic 8-Ball's answer: " + answer)
+print(answer)  
+
+#if name == "" and question != "":
+#  print("Magic 8-Ball's answer: " + answer)  
+#if name != "" and question == "":
+ # print("Dear " + name + ", the Magic 8-Ball cannot provide a fortune unless you ask it something.")    
+#elif question == "":
+ # print("Dear Mystery User, the Magic 8-Ball has not recieved a question.")    
