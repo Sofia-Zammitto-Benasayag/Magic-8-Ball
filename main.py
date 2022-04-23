@@ -1,8 +1,8 @@
 import random
 
 #variables 
-name = "Lucy"
-question = "Will it rain today?"
+name = ""
+question = "Does he love me?"
 answer = ""
 
 random_number = random.randint(1,15) 
@@ -39,5 +39,13 @@ elif random_number == 15:
   answer = "No."         
 else: answer = "Error" 
 
-print("Lucy asks: " + question)
-print("Magic 8 says: " + answer)
+if name == "" and question != "":
+  print("Question: " + question) 
+  print("Magic 8-Ball's answer: " + answer)  
+if name != "" and question == "":
+  print("Dear " + name + ", the Magic 8-Ball cannot provide a fortune unless you ask it something.")    
+elif question == "":
+  print("Dear Mystery User, the Magic 8-Ball has not recieved a question.")    
+elif name == "" and question == "":
+  print(name + " asks: " + question)
+  print("Magic 8-Ball's answer: " + answer)
